@@ -1,0 +1,10 @@
+digraph BlogGeneratorWorkflow {
+
+    "Generator Node" -> "Reviewer Node" [label="generates"];
+    "Reviewer Node" -> "Generator Node" [label="rejects"];
+    "Reviewer Node" -> "Publish" [label="approves"];
+
+    "Generator Node" [shape=box, style=filled, color=".7 .3 1.0"];
+    "Reviewer Node" [shape=box, style=filled, color=".6 .4 1.0"];
+    "Publish" [shape=ellipse, style=filled, color=".5 .5 1.0"];
+}

@@ -3,3 +3,8 @@ langchain_groq
 dotenv
 fastapi
 streamlit
+langgraph-cli[inmem]
+langchain-openai
+openai==0.28
+graphviz
+pydentic

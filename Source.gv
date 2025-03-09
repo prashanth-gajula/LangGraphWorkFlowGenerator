@@ -1,0 +1,16 @@
+```dot
+digraph BlogGeneratorWorkflow {
+    // Define the nodes
+    Generator [label="Generator Node" shape="box"]
+    Reviewer [label="Reviewer Node" shape="ellipse"]
+
+    // Define edges
+    Generator -> Reviewer [label="generate"]
+    Reviewer -> Generator [label="requires revision"]
+    Reviewer -> end [label="approve"]
+
+    // Style attributes
+    edge [color="blue"]
+    node [color="red", fontname="Helvetica"]
+}
+```
